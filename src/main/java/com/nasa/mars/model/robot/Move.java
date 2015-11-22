@@ -28,7 +28,7 @@ public interface Move {
      * restrictions.
      *
      * @param currentPosition The current position of the robot
-     * @param restrictions The ground restrictions that has to obeyed
+     * @param ground The ground that the robot is moving on
      * @return Returns true if can make the move
      */
     public abstract boolean canMove(ExplorationGround ground,

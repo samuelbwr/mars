@@ -21,6 +21,10 @@ public interface Robot {
      * @param commands All the commands sent from CASA(ContaAzul Space Agency)
      * @param ground The ground in which the robot will move
      * @return Returns the last robot's position
+     *
+     * @throws RestrictionException Throws if some restriction is getting broken
+     * in the execution
+     * @throws UnexpectedCommandException Throws if a invalid command is prompt
      */
     public Position processCommands(String commands,
             ExplorationGround ground) throws UnexpectedCommandException, RestrictionException;
@@ -32,6 +36,10 @@ public interface Robot {
      * @param command All the commands sent from CASA(ContaAzul Space Agency)
      * @param ground The ground in which the robot will move
      * @param currentPosition The current position of the robot
+     *
+     * @throws RestrictionException Throws if some restriction is getting broken
+     * in the execution
+     * @throws UnexpectedCommandException Throws if a invalid command is prompt
      */
     public void processCommand(char command, ExplorationGround ground,
             Position currentPosition) throws UnexpectedCommandException, RestrictionException;
