@@ -6,7 +6,7 @@ To run tests and build the project just do
 mvn clean install
 </code>
 
-The Robot always start at the position ["0", "0", "N"] and receives the command throught a REST interface to move according to instructions.
+The Robot always start at the position <code>["0", "0", "N"]</code> and receives the command throught a REST interface to move according to instructions.
 
 A exemple of a command is 
 <code>
